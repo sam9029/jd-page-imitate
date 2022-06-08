@@ -1,0 +1,87 @@
+/* <!-- 中间 菜单+ 轮播+个人信息  --> */
+.grid{
+    padding:10px 0 ;
+    height: 480px;
+}
+
+/* .gridLeft-------- */
+.gridLeft{
+    width: 190px;
+    height: 100%;
+    background-color: #fff;
+}
+.gridLeft ul{
+    /* padding: 20px 0; */
+    padding: 15px 0;
+}
+.gridLeft ul li{
+    padding-left: 12px;
+    font-size: 14px;
+    color: #333;
+    line-height: 25px;
+}
+.gridLeft ul li:hover{background-color: #d9d9d9;}
+.gridLeft ul a{
+    font-size: 14px;
+    color: #333;
+    /* margin: 0 3px; */
+}
+.gridLeft ul a:hover{
+    color: #c81623;
+}
+
+/* .gridCenter-------- */
+.gridCenter{
+    width: 790px;
+    height: 100%;
+    margin-left: 10px;
+}
+.gridCenter .big{
+    width: 600px;
+    height: 100%;
+    margin-right: 10px;
+}
+.gridCenter .small{
+    width: 180px;
+    height: 100%;
+}
+
+
+/* .gridRight-------- */
+.gridRight{
+    width: 190px;
+    height: 100%;
+    background-color: #fff;
+}
+
+.gridRight .login{
+    width: 100%;
+    height: 115px;
+    height: 102px;
+    margin-top: 10px;
+    position: relative;
+}
+.loginImgInfo{
+    padding: 0 15px;
+}
+.loginBtn{
+    padding: 0 15px;
+}
+.gridRight .login::after,.news::after{
+    position: absolute;
+    height: 1px;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+    background: linear-gradient(270deg,white,#eeeeee,#eeeeee,white);
+    content: " ";
+}
+.gridRight .news{
+    height: 155px;
+    position: relative;
+    /* background-color: aquamarine; */
+}
+.gridRight .extends{
+    height: 209px;
+    /* background-color: purple; */
+}

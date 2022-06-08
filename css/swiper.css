@@ -1,0 +1,91 @@
+/* 菜单栏 轮播 样式 */
+
+/* big的 ------ */
+.swiperBig{
+    width: 600px;
+    height: 100%;
+}
+.swiper-slide  img{
+    width: 100%;
+    height: 100%;
+} 
+
+/* 圆点按钮 */
+.swiperBig .swiper-pagination{
+    text-align: left;
+    padding-left: 10px;
+}
+/* .swiperBig */
+.swiper-pagination > *{
+    width: 8px;
+    height: 8px;
+    margin-right: 4px;
+    border: 1pxsolidrgba(0,0,0,.05);
+    background: rgba(255,255,255,.9);
+}
+/* .swiperBig */
+.swiper-pagination > *:hover{
+    width: 9px;
+    height: 9px;
+    top: 2px;
+    left: 0;
+    border: 3px solid rgba(0,0,0,.1);
+}
+/* .swiperBig */
+.swiper-pagination > *:active{
+    width: 9px;
+    height: 9px;
+    top: 2px;
+    left: 0;
+    border: 3px solid rgba(0,0,0,.1);
+}
+
+/* 左右按钮*/
+.swiperBig{
+    --swiper-navigation-color: #cfcfcf;/* 单独设置按钮颜色 */
+    --swiper-navigation-size: 12px;/* 设置按钮大小 */
+}
+.swiperBig .swiper-button-prev{
+    left: 0;
+    width: 30px;
+    height: 35px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-color:rgba(0,0,0,.4)
+}
+.swiperBig .swiper-button-next{
+    right: 0;
+    width: 30px;
+    height: 35px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background-color:rgba(0,0,0,.4)
+}
+
+
+/* small的 ------ */
+.swiperSmall{
+    width: 180px;
+    height: 100%;
+}
+.swiperSmall .swiper-slide-item{
+    width: 100%;
+    height: 153px;
+}
+.swiperSmall .swiper-slide-item:nth-child(2){
+    margin: 10px 0;
+    height: 154px;
+}
+.swiperSmall .swiper-slide-item a img{
+    width: 100%;
+    height: 100%;
+}
+
+/* 左右按钮*/
+.swiperSmall{
+    --swiper-navigation-color: rgba(0,0,0,.4);/* 单独设置按钮颜色 */
+    --swiper-navigation-size: 12px;/* 设置按钮大小 */
+    
+}
+
+
