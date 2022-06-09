@@ -1,6 +1,30 @@
-/* 菜单栏 轮播 样式 */
 
-/* big的 ------ */
+/* 按钮公共使用 */
+/* 轮播 + 京东秒杀 用*/
+/* 左右按钮*/
+.swiper{
+    --swiper-navigation-color: #cfcfcf;/* 单独设置按钮颜色 */
+    --swiper-navigation-size: 12px;/* 设置按钮大小 */
+}
+.swiper-button-prev{
+    left: 0;
+    width: 30px;
+    height: 35px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-color:rgba(0,0,0,.4)
+}
+.swiper-button-next{
+    right: 0;
+    width: 30px;
+    height: 35px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background-color:rgba(0,0,0,.4)
+}
+
+/* 菜单栏 轮播 样式 */
+/* big的 ------------------------ */
 .swiperBig{
     width: 600px;
     height: 100%;
@@ -40,29 +64,7 @@
     border: 3px solid rgba(0,0,0,.1);
 }
 
-/* 左右按钮*/
-.swiperBig{
-    --swiper-navigation-color: #cfcfcf;/* 单独设置按钮颜色 */
-    --swiper-navigation-size: 12px;/* 设置按钮大小 */
-}
-.swiperBig .swiper-button-prev{
-    left: 0;
-    width: 30px;
-    height: 35px;
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
-    background-color:rgba(0,0,0,.4)
-}
-.swiperBig .swiper-button-next{
-    right: 0;
-    width: 30px;
-    height: 35px;
-    border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%;
-    background-color:rgba(0,0,0,.4)
-}
-
-
+/* 菜单栏 轮播 样式 */
 /* small的 ------ */
 .swiperSmall{
     width: 180px;
@@ -81,11 +83,116 @@
     height: 100%;
 }
 
-/* 左右按钮*/
-.swiperSmall{
-    --swiper-navigation-color: rgba(0,0,0,.4);/* 单独设置按钮颜色 */
-    --swiper-navigation-size: 12px;/* 设置按钮大小 */
-    
+
+/* 京东秒杀 轮播 */
+/* swiperGoodList */
+.swiperGoodList .goodItem{
+    display: inline-block;
+    width: 200px;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+.swiperGoodList .goodItem div{
+    width: 140px;
+    height: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    background-color: #cfcfcf;
+}
+.swiperGoodList .goodItem div:hover{
+    opacity: 0.8;
+}
+.swiperGoodList .goodItem div img{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+.swiperGoodList .goodItem h6{
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 13px;
+    color: #333;
+    /* 强制一行显示 */
+    white-space:nowrap;
+    /* 溢出隐藏 */
+    overflow:hidden;
+    /* 超出部分 显示 省略号 */
+    text-overflow:ellipsis;
+}
+.swiperGoodList .goodItem p{
+    width: 160px;
+    height: 24px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 13px;
+    color: #e1251b;
+    font-weight: bolder;
+}
+.swiperGoodList .goodItem p::after{
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    content: '';
+    width: 1px;
+    height: 200px;
+    background: linear-gradient(180deg,white,#eeeeee,white);
 }
 
+/* swiperBrandList */
+.swiperBrandList .swiper-slide{
+    margin: 0;
+    padding: 0;
+}
+.swiperBrandList .brandItem{
+    width: 180px;
+    height: 240px;
+    margin: 10px;
+}
+.swiperBrandList .brandItem .brandImage{
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #cfcfcf;
+}
+.swiperBrandList .brandItem .brandInfo{
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    width: 100%;
+    height: 90px;
+    margin-top: 10px;
+    background: linear-gradient(180deg,rgba(255,255,255,.5),rgba(220,224,236,.5));
+}
+.swiperBrandList .brandItem .brandInfo > p:nth-child(1){
+    color: #666;
+}
+.swiperBrandList .brandItem .brandInfo > p:nth-child(2){
+    font-weight: bold;
+}
+.swiperBrandList .brandItem .brandInfo div{
+    border: 1px solid #e1251b;
+    border-radius: 20px;
+    margin: 5px auto;
+    width: 50%;
+    padding: 5px 0;
+    color: #e1251b;
+    font-weight: bold;
+}
+.swiperBrandList .brandItem .brandInfo div:hover{
+    background-color: #e1251b;
+    color: #fff;
+}
+.swiperBrandList .brandItem .brandInfo div i{
+    vertical-align: middle;
+    margin-left: -5px;
+}
 

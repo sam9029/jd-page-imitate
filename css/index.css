@@ -1,4 +1,7 @@
 /* <!-- 中间 菜单+ 轮播+个人信息  --> */
+main{
+    position: relative;
+}
 .grid{
     padding:10px 0 ;
     height: 480px;
@@ -216,4 +219,104 @@
     display: inline-block;
     width: 100%;
 }
-/* .gridRight .extends ul li i */
+
+
+/* <!-- 背景AD --> */
+.gridBgAdBox{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.gridBgAd{
+    position: absolute;
+    width: 100%;
+    height: 710px;
+    left: 0px;
+    top: 0px;
+    margin: 0px;
+    background: #f4f4f4;
+}
+.gridBgAd .adPhoto{
+    display: block;
+    height: 710px;
+    background: url('../imgs/ad/9855e2bde50c683b.png.webp') 50% 0 no-repeat;
+}
+
+
+.hourShopAd{
+    margin-top: 30px;
+    height: 260px;
+    background-color: #fff;
+}
+.countDown{
+    width: 190px;
+    height: 100%;
+    background:url('../imgs/icon/4a15d8883775742e3efbb850ae14def7.png') ;
+    color: #fff;
+}
+.countDown h5{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 31px;
+}
+.countDown p{
+    margin-top: 90px;
+    font-size: 14px;
+    text-align: center;
+}
+.countDown p .timeCount{
+    font-size: 18px;
+    font-weight: bold;
+}
+.countDown div{
+    width: 170px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 20px auto;
+    text-align: center;
+    line-height: 30px;
+}
+.hourCount , .minuteCount ,.secondCount{
+    display: inline-block;
+    width: 30px;
+    height: 30px;    
+    background-color: #333;
+    text-align: center;
+    vertical-align: middle;
+}
+.hourCount , .minuteCount{
+    margin-right: 20px;
+    position: relative;
+}
+.hourCount::after, .minuteCount::after{
+    content: ":";
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: -20px;    
+    font-weight: bolder;
+    font-size: 18px;
+    width: 20px;
+    height: 100%;
+}
+
+.swiperGoodList{
+    width: 800px;
+    height: 100%;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* 轮播样式 写在 swiper.css里 */
+.swiperBrandList{
+    width: 200px;
+    height: 100%;
+}
+/* 轮播样式 写在 swiper.css里 */
+
