@@ -52,17 +52,47 @@
     width: 190px;
     height: 100%;
     background-color: #fff;
+    font-size: 12px;
 }
 
 .gridRight .login{
     width: 100%;
-    height: 115px;
-    height: 102px;
-    margin-top: 10px;
+    height: 95px;
+    padding-top: 15px;
     position: relative;
 }
 .loginImgInfo{
-    padding: 0 15px;
+    padding: 0 20px;
+    height: 50px;
+    text-align: left;
+    padding-left: 80px;
+    line-height: 20px;
+    /* 多于字体的隐藏显示 */
+    /* 强制一行显示 */
+    white-space:nowrap;
+    /* 溢出隐藏 */
+    overflow:hidden;
+    /* 超出部分 显示 省略号 */
+    text-overflow:ellipsis;
+    color: #666;
+    position: relative;
+}
+.log , .reg{
+    color: #111;
+}
+.loginImgInfo .imgInfo{
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #eeeeee;
+    border-radius: 100%;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 5%);
+}
+.loginImgInfo .imgInfo img{
+    width: 100%;
 }
 .loginBtn{
     padding: 0 15px;
@@ -76,12 +106,114 @@
     background: linear-gradient(270deg,white,#eeeeee,#eeeeee,white);
     content: " ";
 }
+.gridRight .loginBtn{
+    padding: 10px 20px 0 20px;
+}
+.loginBtn .newUser,.vip{
+    display: inline-block;
+    width: 70px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    border-radius: 13px;
+    background: #e1251b;
+}
+.loginBtn .vip{
+    background: #363634;
+    color: #e5d790;
+}
+.loginBtn > a:hover{
+    background-color: #c81623;
+    color: #fff;
+}
+
+
 .gridRight .news{
-    height: 155px;
+    height: 110px;
     position: relative;
+    padding: 10px 15px;
     /* background-color: aquamarine; */
 }
+.gridRight .news .newsTilte{
+    position: relative;
+    margin-bottom: 8px;
+    /* 190px */
+    width: 100%;
+    height: 20px;
+}
+.gridRight .news h5{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 14px;
+}
+.gridRight .news .moreNews{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.gridRight .news .newsContent{
+    height: 88px;
+}
+.gridRight .news .newsContent .contentItem{
+    height: 16px;
+    line-height: 16px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #999;
+    margin-bottom: 6px;
+}
+.gridRight .news .newsContent .newTag{ 
+    display: inline-block;
+    position: relative;
+    font-size: 12px;
+    height: 16px;
+    width: 35px;
+    line-height: 16px;
+    text-align: center;
+    vertical-align: 0;
+    color: #e1251b;
+    background-color: rgba(225,37,27,.08);
+    margin-right: 6px;
+}
+
 .gridRight .extends{
-    height: 209px;
+    height: 230px;
+    padding: 5px 0.5px;
+    /* border: 1px solid black; */
     /* background-color: purple; */
 }
+.gridRight .extends ul li{
+    text-align: center;
+    padding-top: 5px;
+    width: 63px;
+    float: left;
+}
+.gridRight .extends ul li .extendIcon{
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+}
+.gridRight .extends ul li .extendIcon img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.gridRight .extends ul li .extendIcon img.hoverIcon{
+    display: none;
+}
+.gridRight .extends ul li .extendIcon img.showIcon:hover{
+    display: none;
+}
+.gridRight .extends ul li .extendIcon img.showIcon:hover +  .hoverIcon{
+    display: block;
+}
+.gridRight .extends ul li .iconTip{
+    padding-top: 5px;
+    display: inline-block;
+    width: 100%;
+}
+/* .gridRight .extends ul li i */

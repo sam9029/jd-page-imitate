@@ -68,3 +68,32 @@ text-overflow:ellipsis;
 ### 路径引用相关---gitee page 无法正确读取文件路径
 - 所有路径前 一定要 写 前缀（之前没写-gitee图片就无法显示）
 - 如 './'  '../'
+
+
+
+### ⭐ a 标签问题 css 样式 问题（同理其他元素）
+#### 以元素名重复声明css，之前的:hover会失效
+~~~css
+/* 基础样式 */
+a:hover{color:blue}
+
+el > a { ... } /* 这样写 a:hover 会失效 */
+
+/* 假设 a 的class 为 .a1 */
+.al{ ... } /* 这样写 a:hover 就不会失效 */
+~~~
+
+### ⭐(未知正误) css 选择器问题 
+- 这样写 只能作用于 .reg 
+```css
+.loginImgInfo > .log , .reg{
+    color: #111;
+}
+```
+- 这样写 能作用于.log 和 .reg 
+```css
+.log , .reg {
+    color: #111;
+}
+
+```
