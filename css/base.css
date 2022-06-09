@@ -187,7 +187,7 @@ nav.shortcut {
 }
 .logo h1 a {
   display: block;
-  background: #fff url("/imgs/icon/a50ec1c60e6aad22.jpg") no-repeat;
+  background: #fff url("../imgs/icon/a50ec1c60e6aad22.jpg") no-repeat;
   background-size: 100% 100%;
   width: 190px;
   height: 120px;
@@ -331,7 +331,7 @@ footer{
     left: 38px;
     width: 37px;
     height: 43px;
-    background: url('/imgs/icon/cc1d8d291ea917c0.png') no-repeat;    
+    background: url('../imgs/icon/cc1d8d291ea917c0.png') no-repeat;    
 }
 .service  ul li:nth-child(1) > h5{background-position: 0 -192px;}
 .service  ul li:nth-child(2) > h5{background-position: -41px -192px}
@@ -376,7 +376,7 @@ footer{
 .help .fr{
     width: 200px;
     height: 150px;
-    background: url('/imgs/icon/cc1d8d291ea917c0.png');
+    background: url('../imgs/icon/cc1d8d291ea917c0.png');
 }
 .help .fr .helpAera h5{
     margin-bottom: 15px;
@@ -429,7 +429,7 @@ footer{
     height: 12px;
     vertical-align: -1px;
     margin-right: 10px;
-    background-image: url('/imgs/icon/cc1d8d291ea917c0.png');
+    background-image: url('../imgs/icon/cc1d8d291ea917c0.png');
 }
 .overseaLink > p  i.global{background-position: -108px -155px;}
 .overseaLink > p  i.rissa{background-position: -168px -155px;}
@@ -447,7 +447,7 @@ footer{
     width: 103px;
     height: 32px;
     background-repeat: no-repeat;
-    background-image: url(/imgs/icon/cc1d8d291ea917c0.png);
+    background-image: url(../imgs/icon/cc1d8d291ea917c0.png);
     /* line-height: 1000px; */
 }
 /* 使用图片不一样 */
@@ -458,20 +458,20 @@ footer{
 
 /* 使用图片不一样 */
 .copyAuth a:nth-child(4){
-    background-image: url(/imgs/icon/auth.png);
+    background-image: url(../imgs/icon/auth.png);
     background-position: 0 -66px;
 }
 .copyAuth a:nth-child(6){
-    background-image: url(/imgs/icon/auth.png);
+    background-image: url(../imgs/icon/auth.png);
     background-position: 0 -99px;
 }
 .copyAuth a:nth-child(7){
     width: 70px;
-    background-image: url(/imgs/icon/auth.png);
+    background-image: url(../imgs/icon/auth.png);
     background-position: -104px -99px;
 }
 .copyAuth a:nth-child(8){
-    background-image: url(/imgs/icon/auth.png);
+    background-image: url(../imgs/icon/auth.png);
     background-position: -104px -131px;
 }
 

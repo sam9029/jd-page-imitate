@@ -31,7 +31,7 @@ text-overflow:ellipsis;
 
 
 ## 问题
-### .nvaItem .superAd 在 .middleNav > .w 之中
+### .nvaItem .superAd 在 .middleNav > .w 之中 (容器定位相关)
 但是
 ~~~css
 /* .w 为 relative  */
@@ -63,3 +63,8 @@ text-overflow:ellipsis;
     right: 12px;
 }
 ~~~
+
+
+### 路径引用相关---gitee page 无法正确读取文件路径
+- 所有路径前 一定要 写 前缀（之前没写-gitee图片就无法显示）
+- 如 './'  '../'
