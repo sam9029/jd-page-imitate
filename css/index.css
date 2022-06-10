@@ -248,6 +248,8 @@ main{
 
 .hourShopAd{
     margin-top: 30px;
+    /* 外边距塌陷--写20px以下 不出效果 */
+    margin-bottom: 30px;
     height: 260px;
     background-color: #fff;
 }
@@ -307,16 +309,91 @@ main{
 }
 
 .swiperGoodList{
+    /* 轮播样式 写在 swiper.css里 */
     width: 800px;
     height: 100%;
     font-size: 12px;
     font-weight: 400;
 }
 
-/* 轮播样式 写在 swiper.css里 */
 .swiperBrandList{
+    /* 轮播样式 写在 swiper.css里 */
     width: 200px;
     height: 100%;
 }
-/* 轮播样式 写在 swiper.css里 */
 
+/* <!-- 618 大促 活动楼层  --> */
+
+.activity618{
+    /* width: 100%; */
+}
+.activity{
+    margin: 20px auto;
+    /* background-color: #333; */
+    width: 1270px;
+    height: 555px;
+    background: url('../imgs/icon/cc916f6ca9b2e064.jpg_cc_1270x555.jpg') no-repeat;
+    /* 父子 元素 的 margin （上下） 塌陷 */
+    overflow:hidden;
+}
+
+.activityGoods{
+    margin-top: 108px;
+    width: 1202.5px;
+    height: 448px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.activityItem{
+    width: 1200px;
+    height: 100%;
+    margin: 0 5.25px;
+}
+.activityItem a{
+    display: inline-block;
+    width: 190px;
+    height: 210px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    float: left;
+    overflow: hidden;
+}
+.activityItem .activityItemImg{
+    margin-left: 30px;
+    margin-left: 30px;
+    margin-top: 7px;
+    width: 130px;
+    height: 130px;
+}
+.activityItem .activityItemInfo{
+    background: url('../imgs/icon/ce484c2ce3c9c8da.png!cc_190x210.png');
+    background-position: 0 -140px ;
+    margin-top: 3px;
+    width: 190px;
+    height: 70px;
+    text-align: center;
+    position: relative;
+}
+.activityItem .activityItemInfo .activityAd{
+    width: 190px;
+    height: 32px;
+}
+.activityItem .activityItemInfo span{
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    transform: translate(-50%);
+    color: #fff;
+    z-index: 999;
+    font-size:17px;
+    font-weight: bolder;
+}
+.activityItem .activityItemInfo p{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bolder;
+    color: #de452b;
+    line-height: 16px;
+}

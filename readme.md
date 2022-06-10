@@ -97,3 +97,30 @@ el > a { ... } /* 这样写 a:hover 会失效 */
 }
 
 ```
+
+
+### ⭐多个 a 标签在盒子内排布， display 设置 inline-block 后 每个a 之间会有大概10px 的空隙 
+- 设置 float 就可以解决
+
+
+### ⭐/* 父子 元素 的 margin （上下） 塌陷 */
+~~~html
+<div class="fa">
+  <div class="son"></div>
+</div>
+~~~
+
+~~~css
+.fa{
+  width: 300px;
+  height: 300px;
+  background:#999;
+  overflow:hidden;
+}
+.son{
+  margin:100px;
+  width: 100px;
+  height: 100px;
+  background:#111;
+}
+~~~

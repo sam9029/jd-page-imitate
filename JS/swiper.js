@@ -58,5 +58,6 @@ var swiperBrandList = new Swiper ('.swiperBrandList', {
   // 如果需要分页器
   pagination: {
     el: '.swiper-pagination',
+    clickable :true,//点击分页器的指示点分页器会控制Swiper切换
   },
 })  
