@@ -367,6 +367,9 @@ main{
     width: 130px;
     height: 130px;
 }
+.activityItem .activityItemImg:hover{
+    opacity: 0.8;
+}
 .activityItem .activityItemInfo{
     background: url('../imgs/icon/ce484c2ce3c9c8da.png!cc_190x210.png');
     background-position: 0 -140px ;
@@ -396,4 +399,149 @@ main{
     font-weight: bolder;
     color: #de452b;
     line-height: 16px;
+}
+
+
+/* <!-- 为你推荐-- --> */
+.recommendBigBox{}
+.recommendBox{
+    /* 版心有宽度，写100% 会填满网页宽度 */
+    /* width: 100%; */
+    height: 5190px;
+}
+.recommendBox .recommendTitle{
+    position: relative;
+    width: 150px;
+    height: 45px;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 45px;
+    padding: 0 30px;
+    /* 上 左右 下 */
+    margin: 0 auto 20px;
+    overflow: hidden;
+    color: #333;
+}
+.recommendTitle::before,.recommendTitle::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    background-image: url('../imgs/icon/11.png');
+    width: 25px;
+    height: 20px;
+    
+}
+.recommendTitle::before{
+    left: 0%;
+}
+.recommendTitle::after{
+    background-position: 25px 0;
+    right: 0;    
+}
+.activeRouterTitle{
+    margin: 0 auto;
+    height: 60px;
+    width: 1080px;
+    
+}
+.activeRouterTitle ul li{
+    display: inline-block;
+    float: left;
+    position: relative;
+    width: 180px;
+    height: 60px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #fff;
+}
+.activeRouterTitle ul li a{
+    margin-top: 7px;
+    display: block;
+}
+.activeRouterTitle ul li a h5{
+    width: 70px;
+    height: 27px;
+    line-height: 27px;
+    display: inline-block;
+    border-radius: 50px;
+    padding: 0 5px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.activeRouterTitle ul li a h5.activeRecommend{
+    background: #e1251b;
+    color: #fff;
+}
+.activeRouterTitle ul li a h5:hover{
+    background: #e1251b;
+    color: #fff;
+}
+.recommendTitleGap {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 40px;
+    margin: 10px 0;
+    width: 1px;
+    background: #dfdfdf;
+    background: linear-gradient(180deg,white,#dfdfdf 51%,white);
+}
+
+.commodityBox{
+    margin: 10px auto;
+    width: 100%;
+    overflow: hidden;
+}
+.commodityBox ul{
+    margin:0 -5px;
+}
+.commodityBox .commodityItem{
+    position: relative;
+    float: left;
+    width: 230px;
+    height: 322px;
+    margin: 0 5px 10px;
+    background-color: #999;
+}
+
+.commodityItem .commodityClose{
+    position:absolute;
+    top: 0;
+}
+.commodityItem .commodityImage{
+    width: 150px;
+    height: 150px;
+    margin: 30px auto 40px;
+    background-color: #111;
+}
+.commodityItem .commodityInfo{
+    padding: 0 20px;
+    height: 85px;
+    background-color: #666;
+    font-size: 14px;
+    line-height: 24px;
+}
+.commodityItem .commodityInfo .commodityInfoDetail{
+    /* word-break: break-all; 在合适的地方换行 */
+    word-break: break-all;
+}
+/* 自营标识 */
+.commodityItem .commodityInfo .commodityInfoDetail .selfSign{
+    background-color: #e1251b;
+    border-radius: 2px;
+    color: #fff;
+    padding: 0 5px;
+    margin-right: 4px;
+    line-height: 16px;
+    height: 16px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+
+.commodityItem .commodityCompare{
+    position:absolute;
+    top: 0;
 }

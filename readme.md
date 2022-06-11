@@ -29,6 +29,20 @@ text-overflow:ellipsis;
 }
 ~~~
 
+### margin 的 三个值写法
+~~~css
+    /* 上 左右 下 */
+    margin: 0 auto 20px;
+~~~
+
+### word-break:
+/* word-break: break-all; 在合适的地方换行 */
+~~~
+normal	使用浏览器默认的换行规则。
+break-all	允许在单词内换行。
+keep-all	只能在半角空格或连字符处换行。
+~~~
+
 
 ## 问题
 ### .nvaItem .superAd 在 .middleNav > .w 之中 (容器定位相关)
