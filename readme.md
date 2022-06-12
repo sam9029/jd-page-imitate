@@ -36,6 +36,7 @@ text-overflow:ellipsis;
 ~~~
 
 ### word-break:
+
 /* word-break: break-all; 在合适的地方换行 */
 ~~~
 normal	使用浏览器默认的换行规则。
@@ -43,8 +44,33 @@ break-all	允许在单词内换行。
 keep-all	只能在半角空格或连字符处换行。
 ~~~
 
+### 双行文字隐藏为点点效果
+
+~~~css
+	height: 48px;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+    color: #666;
+    -webkit-transition: color .2s ease;
+    transition: color .2s ease;
+	/* 以下 为 设置的属性 来实现双行隐藏为点点效果*/	
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+~~~
+
+
+
+![双行文字隐藏为点点效果](.\双行文字隐藏为点点效果.jpg)
+
+----
 
 ## 问题
+
 ### .nvaItem .superAd 在 .middleNav > .w 之中 (容器定位相关)
 但是
 ~~~css
